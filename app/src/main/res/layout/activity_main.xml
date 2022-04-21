@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/app_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@mipmap/top_image"
+            android:layout_centerInParent="true"
+            >
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnRollTheDice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cc0066"
+        android:text="Roll the dice"
+        android:textColor="#fff"></Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/diceImage1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:src="@mipmap/dice1">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/diceImage2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:src="@mipmap/dice2">
+
+        </ImageView>
+    </LinearLayout>
+
+</LinearLayout>
